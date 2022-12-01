@@ -1,0 +1,16 @@
+footer{
+    width: 100%;
+    padding: 15px;
+    margin: auto;
+    background: black;
+}
+#foot{
+    text-align: center;
+}
+footer li{
+    display: inline;    
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}

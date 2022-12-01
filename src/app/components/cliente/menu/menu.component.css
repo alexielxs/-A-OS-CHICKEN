@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial;
+    background: darkgray;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background: #FFDB58;
+    margin: auto;
+    overflow: hidden;
+    padding: 15px;
+    top: 0;
+    left: 0;
+}
+.buscar{
+    position: absolute;
+    padding: 22px;
+    margin-left: 75px;
+}
+.buscar input{
+    align-items: center;
+    width: 240px;
+    height: 32px;
+    padding: 0 0 0 11px;
+    font-size: 14px;
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 12px;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+section{
+    width: 1000px;
+    margin: auto;
+    background: burlywood;
+    overflow: hidden;
+    padding: 10px;
+}
+
+#izq img{
+    width: 80px;
+    margin-left: 10px;
+    margin: auto;
+    float: left;
+    border-radius: 50px;
+}
+.botonera{
+    float: right;
+}
+.botonera ul{
+    display: flex;
+    list-style: none;
+}
+.botonera li{
+    position: relative;
+}
+.botonera a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 20px;
+    font-size: 18px;
+    
+}
+.botonera a:hover{
+    
+    color: RED;
+}
+
+.banner{
+    position: relative;
+    /*background: url(../img/banes.gif);*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;  
+}
+
+.buscar a{
+    text-decoration: none;
+    margin: 20px;
+    padding: 12px;
+    font-weight: bold;
+}
