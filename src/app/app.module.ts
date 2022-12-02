@@ -9,6 +9,9 @@ import { FooterClienteComponent } from './components/cliente/footer-cliente/foot
 import { HomeComponent } from './pages/cliente/home/home.component';
 import { CartaComponent } from './pages/cliente/carta/carta.component';
 import { MenuComponents } from './components/cliente/menu/menu.component';
+import { NosotrosComponent } from './pages/cliente/nosotros/nosotros.component';
+import { RutasComponent } from './components/cliente/rutas/rutas.component';
+import { LoginComponent } from './pages/cliente/login/login.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { MenuComponents } from './components/cliente/menu/menu.component';
     MenuComponents,
     FooterClienteComponent,
     HomeComponent,
-    CartaComponent
+    CartaComponent,
+    NosotrosComponent,
+    RutasComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

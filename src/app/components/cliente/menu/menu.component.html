@@ -4,16 +4,15 @@
             <a href="index.html"><img src="assets/img/menu/logo.png" alt="" ></a>
         </div>
         <div class="buscar">
-            <a href="#">Home</a>
-            <a href="#">Carta</a>
+            <a [routerLink]="['']">Home</a>
+            <a [routerLink]="['/carta']">Carta</a>
             <a href="#">Locales</a>
-            <a href="#">Home</a>
             <input type="text" placeholder="Buscar:" required>     
         </div>
         <div class="botonera">
             <ul>
                 <li>
-                    <a href="Login/Login.html"><img src="img/user.png" alt="" width="35px">INICIAR SESION</a>
+                    <a [routerLink]="['/login']"><img src="img/user.png" alt="" width="35px">INICIAR SESION</a>
                 </li>
                 <li>
                     <a href="compra.html"><img src="img/carrito-de-compras.png" alt="" width="39px"></a>

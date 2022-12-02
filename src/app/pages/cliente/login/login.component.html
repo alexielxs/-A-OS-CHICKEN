@@ -1,0 +1,28 @@
+
+<div class="container2">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="elegir"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Iniciar Sesion</button>
+            <button type="button" class="toggle-btn" onclick="registrar()">Registrar</button>
+        </div>
+        <div class="redes-sociales">
+            <img src="/img/facebook.png" alt="">
+            <img src="/img/google.png" alt="">
+        </div>
+        <form action="login.php" id="login" method="post" class="input-group">
+            <input type="text" class="input-field" name="usuarios" placeholder="Nombre de Usuario" required>
+            <input type="password" class="input-field" name="pasword" placeholder="Contraseña" required>
+            <input type="checkbox" class="check-box"><span>Recordar Contraseña</span>
+            <button type="submit" class="submit-btn">Acceder</button>
+        </form>
+        <form action="registro.php" method="post" id="registrar" class="input-group">
+            <input type="text" class="input-field" name="usuarios" placeholder="Nombre de Usuario" required>
+            <input type="email" class="input-field" name="correos" placeholder="Correo" required>
+            <input type="password" class="input-field" name="pasword" placeholder="Contraseña" required>
+            <input type="checkbox" class="check-box"><span>Acepto los Terminos y condiciones</span>
+            <button type="submit" class="submit-btn">Registrar</button>
+        </form>
+    </div>
+</div>
+
