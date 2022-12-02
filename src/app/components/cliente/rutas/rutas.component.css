@@ -7,7 +7,7 @@
 #facebook a{
     background: black;
     color: white;
-    padding: 10px 21px;
+    padding: 10px 22px;
     text-decoration: none;
     transition: 0.5s ease-out;
 }
@@ -19,7 +19,7 @@
 #youtube a{
     background: black;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 22px;
     text-decoration: none;
     transition: 0.5s ease-out;
 }
@@ -29,9 +29,10 @@
     transition: 0.5s ease-out;
 }
 #twitter a{
+    
     background: black;
     color: white;
-    padding: 10px 21px;
+    padding: 10px 22px;
     text-decoration: none;
     transition: 0.5s ease-out;
 }
@@ -41,6 +42,7 @@
     transition: 0.5s ease-out;
 }
 #instagram a{
+    margin-top: 60px;
     background: black;
     color: white;
     padding: 10px 22px;
