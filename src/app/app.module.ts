@@ -12,6 +12,7 @@ import { MenuComponents } from './components/cliente/menu/menu.component';
 import { NosotrosComponent } from './pages/cliente/nosotros/nosotros.component';
 import { RutasComponent } from './components/cliente/rutas/rutas.component';
 import { LoginComponent } from './pages/cliente/login/login.component';
+import { LocalComponent } from './pages/cliente/local/local.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LoginComponent } from './pages/cliente/login/login.component';
     CartaComponent,
     NosotrosComponent,
     RutasComponent,
-    LoginComponent
+    LoginComponent,
+    LocalComponent
   ],
   imports: [
     BrowserModule,

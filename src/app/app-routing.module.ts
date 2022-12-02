@@ -4,6 +4,7 @@ import { MenuAdminComponent } from './components/admin/menu/menu.component';
 import { MenuComponents } from './components/cliente/menu/menu.component';
 import { CartaComponent } from './pages/cliente/carta/carta.component';
 import { HomeComponent } from './pages/cliente/home/home.component';
+import { LocalComponent } from './pages/cliente/local/local.component';
 import { LoginComponent } from './pages/cliente/login/login.component';
 import { NosotrosComponent } from './pages/cliente/nosotros/nosotros.component';
 
@@ -23,6 +24,9 @@ const routes: Routes = [
   },
   {
     path:"login", component:LoginComponent
+  },
+  {
+    path:"locales", component:LocalComponent
   }
 ];
 
