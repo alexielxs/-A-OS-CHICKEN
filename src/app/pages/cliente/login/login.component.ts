@@ -11,21 +11,28 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  /*
+   * Paramenter -> Tipo
+   * 0 : Login
+   * 1 : Registro
+  */
+
+  animacion(tipo : any)
+  {
+    let x = document.getElementById("login")
+    let y = document.getElementById("registrar")
+    let z = document.getElementById("elegir")
+    
   
- /* var x =document.getElementById("login")
-  var y =document.getElementById("registrar")
-  var z =document.getElementById("elegir")
+    if (x != null && y != null && z != null)
+    {
 
-  function login(){
-      x.style.left = "50px";
-      y.style.left = "450px";
-      z.style.left = "0px";
+      x.style.left = tipo == 0 ? "50px" : "-400px";
+      y.style.left = tipo == 0 ? "450px" : "50px";
+      z.style.left = tipo == 0 ? "0px" : "120px";
+    
+    }
+    
   }
-
-  function registrar(){
-      x.style.left = "-400px";
-      y.style.left = "50px";
-      z.style.left = "120px";
-  }*/
-
 }
