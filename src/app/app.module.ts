@@ -13,6 +13,7 @@ import { NosotrosComponent } from './pages/cliente/nosotros/nosotros.component';
 import { RutasComponent } from './components/cliente/rutas/rutas.component';
 import { LoginComponent } from './pages/cliente/login/login.component';
 import { LocalComponent } from './pages/cliente/local/local.component';
+import { CompraComponent } from './pages/cliente/compra/compra.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { LocalComponent } from './pages/cliente/local/local.component';
     NosotrosComponent,
     RutasComponent,
     LoginComponent,
-    LocalComponent
+    LocalComponent,
+    CompraComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MenuAdminComponent } from './components/admin/menu/menu.component';
 import { MenuComponents } from './components/cliente/menu/menu.component';
 import { CartaComponent } from './pages/cliente/carta/carta.component';
+import { CompraComponent } from './pages/cliente/compra/compra.component';
 import { HomeComponent } from './pages/cliente/home/home.component';
 import { LocalComponent } from './pages/cliente/local/local.component';
 import { LoginComponent } from './pages/cliente/login/login.component';
@@ -27,6 +28,9 @@ const routes: Routes = [
   },
   {
     path:"locales", component:LocalComponent
+  },
+  {
+    path:"compra", component:CompraComponent
   }
 ];
 
