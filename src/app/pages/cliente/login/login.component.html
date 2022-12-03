@@ -7,13 +7,14 @@
             <button type="button" class="toggle-btn" (click)="animacion(1)">Registrar</button>
         </div>
         <div class="redes-sociales">
-            <img src="/img/facebook.png" alt="">
-            <img src="/img/google.png" alt="">
+            <img src="assets/img/login/facebook.png" alt="">
+            <img src="assets/img/login/google.png" alt="">
         </div>
         <form action="login.php" id="login" method="post" class="input-group">
             <input type="text" class="input-field" name="usuarios" placeholder="Nombre de Usuario" required>
             <input type="password" class="input-field" name="pasword" placeholder="Contraseña" required>
             <input type="checkbox" class="check-box"><span>Recordar Contraseña</span>
+            
             <button type="submit" class="submit-btn">Acceder</button>
         </form>
         <form action="registro.php" method="post" id="registrar" class="input-group">
@@ -21,6 +22,7 @@
             <input type="email" class="input-field" name="correos" placeholder="Correo" required>
             <input type="password" class="input-field" name="pasword" placeholder="Contraseña" required>
             <input type="checkbox" class="check-box"><span>Acepto los Terminos y condiciones</span>
+            
             <button type="submit" class="submit-btn">Registrar</button>
         </form>
     </div>
