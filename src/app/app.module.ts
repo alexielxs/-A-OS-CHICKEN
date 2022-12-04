@@ -14,6 +14,9 @@ import { RutasComponent } from './components/cliente/rutas/rutas.component';
 import { LoginComponent } from './pages/cliente/login/login.component';
 import { LocalComponent } from './pages/cliente/local/local.component';
 import { CompraComponent } from './pages/cliente/compra/compra.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -27,11 +30,14 @@ import { CompraComponent } from './pages/cliente/compra/compra.component';
     RutasComponent,
     LoginComponent,
     LocalComponent,
-    CompraComponent
+    CompraComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
     IonicModule.forRoot()
   ],
   providers: [],

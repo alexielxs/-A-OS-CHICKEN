@@ -11,19 +11,19 @@
             <img src="assets/img/login/google.png" alt="">
         </div>
         <form action="login.php" id="login" method="post" class="input-group">
-            <input type="text" class="input-field" name="usuarios" placeholder="Nombre de Usuario" required>
-            <input type="password" class="input-field" name="pasword" placeholder="Contraseña" required>
+            <input type="text" class="input-field" name="usuarios" placeholder="Nombre de Usuario" required [(ngModel)]="users" />
+            <input type="password" class="input-field" name="pasword" placeholder="Contraseña" required [(ngModel)]="pass" >
             <input type="checkbox" class="check-box"><span>Recordar Contraseña</span>
             
-            <button type="submit" class="submit-btn">Acceder</button>
+            <button type="submit" class="submit-btn" (click)="accesoLogin()">Acceder</button>
         </form>
         <form action="registro.php" method="post" id="registrar" class="input-group">
-            <input type="text" class="input-field" name="usuarios" placeholder="Nombre de Usuario" required>
-            <input type="email" class="input-field" name="correos" placeholder="Correo" required>
-            <input type="password" class="input-field" name="pasword" placeholder="Contraseña" required>
+            <input type="text" class="input-field" name="usuarios" placeholder="Nombre de Usuario" required [(ngModel)]="login.user">
+            <input type="email" class="input-field" name="correos" placeholder="Correo" required >
+            <input type="password" class="input-field" name="pasword" placeholder="Contraseña" required [(ngModel)]="login.password">
             <input type="checkbox" class="check-box"><span>Acepto los Terminos y condiciones</span>
             
-            <button type="submit" class="submit-btn">Registrar</button>
+            <button type="submit" class="submit-btn" (click)="registrarLogin()">Registrar</button>
         </form>
     </div>
 </div>

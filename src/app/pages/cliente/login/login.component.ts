@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Login } from './login';
+import { LoginService } from './login.service';
 
 @Component({
   selector: 'app-login',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private loginservice:LoginService) {}
 
   ngOnInit(): void {
   }
@@ -32,7 +34,32 @@ export class LoginComponent implements OnInit {
       y.style.left = tipo == 0 ? "450px" : "50px";
       z.style.left = tipo == 0 ? "0px" : "120px";
     
-    }
+    } 
+  }
+
+  login:Login={
+    "password":"",
+    "user":"",
+    "tipoUser": "USUARIO"
+  }
+  users:string ="";
+  pass:string ="";
+
+  accesoLogin()
+  {
+    console.log("user: "+this.users)
+    console.log("password: "+this.pass)
     
+    this.loginservice.getLogin(this.users, this.pass).subscribe(user=>{
+      console.log(user);
+    });
+  }
+
+  registrarLogin()
+  {
+    this.loginservice.guardarLogin(this.login).subscribe(respuesta=>
+      {
+        console.log(respuesta);
+      })
   }
 }
