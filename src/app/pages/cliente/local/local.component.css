@@ -1,0 +1,32 @@
+span{
+    margin-right: 20px;
+}
+
+select{
+    width: 250px;
+    
+}
+
+.elegirLocal{
+    text-align: center;
+    width: 50%;
+    margin: 30px auto;
+}
+
+.descripcion
+{
+    /*height: 300px;*/
+}
+
+.descripcion p{
+    text-align: center;
+}
+
+iframe
+{
+    display: block;
+    margin: 40px auto;
+}
+
+
+

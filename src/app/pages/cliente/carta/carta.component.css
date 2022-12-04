@@ -7,6 +7,7 @@
     min-height: 300px;
     justify-content: space-around;
     flex-flow: row wrap;
+    margin: 100px auto;
 }
 
 .contenedor-platillo
@@ -57,4 +58,16 @@ img{
 button.comprar
 {
     background-color: #28a745;
+}
+
+.precio{
+    font-size: 30px;
+    margin: auto 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.descripcion{
+    padding-left: 30px;
+    padding-right: 30px;
 }

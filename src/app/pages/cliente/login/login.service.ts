@@ -5,7 +5,7 @@ import { Login } from './login';
 
 @Injectable({
   providedIn: 'root'
-})
+})  
 export class LoginService {
   private urlEndPoint:string="http://localhost:8080/login"
 
