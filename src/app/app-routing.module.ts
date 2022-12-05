@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MenuAdminComponent } from './components/admin/menu/menu.component';
 import { MenuComponents } from './components/cliente/menu/menu.component';
+import { PlatosComponent } from './pages/admin/platos/platos.component';
 import { CartaComponent } from './pages/cliente/carta/carta.component';
 import { CompraComponent } from './pages/cliente/compra/compra.component';
 import { HomeComponent } from './pages/cliente/home/home.component';
@@ -31,6 +32,9 @@ const routes: Routes = [
   },
   {
     path:"compra", component:CompraComponent
+  },
+  {
+    path:"platos", component:PlatosComponent
   }
 ];
 

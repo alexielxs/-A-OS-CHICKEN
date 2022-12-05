@@ -16,6 +16,7 @@ import { LocalComponent } from './pages/cliente/local/local.component';
 import { CompraComponent } from './pages/cliente/compra/compra.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { PlatosComponent } from './pages/admin/platos/platos.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     LocalComponent,
     CompraComponent,
+    PlatosComponent,
     
   ],
   imports: [
