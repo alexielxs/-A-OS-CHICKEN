@@ -6,7 +6,7 @@
         <img src={{carta.imageRuta}} alt={{carta.nombrePlatillo}}>
         <p class="precio">S/. {{carta.precio}}</p>
         <p class="descripcion">{{carta.descripcion}}</p>
-        <button class="carrito">Añadir Al Carrito</button>
+        <button class="carrito" (click)="agragarAlCarrito(carta)">Añadir Al Carrito</button>
         <button class="comprar">Comprar</button>
     </div>
 
