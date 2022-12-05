@@ -1,7 +1,7 @@
 <app-menu-admin></app-menu-admin>
 <br>
 <br>
-<div  class="container" style="margin: auto;">
+<div class="container aea" style="margin: auto;">
     <h2>Platos</h2>
     <button type="button" class="btn btn-success" >Agregar nuevo plato</button>
     <table class="table">
@@ -9,17 +9,21 @@
         <tr>
           <th>ID</th>
           <th>Nombre</th>
-          <th>precios</th>
+          <th>Precio</th>
+          <th>Descripción</th>
           <th>Opciones</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
+        <tr *ngFor="let plato of listacarta">
+          <td>{{plato.idCarta}}</td>
+          <td>{{plato.nombrePlatillo}}</td>
+          <td>{{plato.precio}}</td>
+          <td>{{plato.descripcion}}</td>
           <td>
-            <button type="button" class="btn btn-primary"><ion-icon name="pencil-outline"></ion-icon>Editar</button>
+            <button type="button" class="btn btn-primary">
+              <ion-icon name="pencil-outline"></ion-icon>Editar
+            </button>
             <button type="button" class="btn btn-danger" style="margin-left: 10px;"><ion-icon name="trash-outline"></ion-icon>Eliminar</button>
           </td>
         </tr>
