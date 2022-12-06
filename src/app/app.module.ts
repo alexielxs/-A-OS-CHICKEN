@@ -17,6 +17,7 @@ import { CompraComponent } from './pages/cliente/compra/compra.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { PlatosComponent } from './pages/admin/platos/platos.component';
+import { UsuariosComponent } from './pages/admin/usuarios/usuarios.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { PlatosComponent } from './pages/admin/platos/platos.component';
     LocalComponent,
     CompraComponent,
     PlatosComponent,
+    UsuariosComponent,
     
   ],
   imports: [
