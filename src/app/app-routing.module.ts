@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MenuAdminComponent } from './components/admin/menu/menu.component';
 import { MenuComponents } from './components/cliente/menu/menu.component';
+import { OrdenesComponent } from './pages/admin/ordenes/ordenes.component';
 import { PlatosComponent } from './pages/admin/platos/platos.component';
 import { UsuariosComponent } from './pages/admin/usuarios/usuarios.component';
 import { CartaComponent } from './pages/cliente/carta/carta.component';
@@ -39,6 +40,9 @@ const routes: Routes = [
   },
   {
     path:"usuarios", component:UsuariosComponent
+  },
+  {
+    path:"ordenes", component:OrdenesComponent
   }
 ];
 

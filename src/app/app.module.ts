@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { PlatosComponent } from './pages/admin/platos/platos.component';
 import { UsuariosComponent } from './pages/admin/usuarios/usuarios.component';
+import { OrdenesComponent } from './pages/admin/ordenes/ordenes.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { UsuariosComponent } from './pages/admin/usuarios/usuarios.component';
     CompraComponent,
     PlatosComponent,
     UsuariosComponent,
+    OrdenesComponent,
     
   ],
   imports: [
