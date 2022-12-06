@@ -7,21 +7,27 @@
     <table class="table">
       <thead>
         <tr>
-          <th>ID</th>
+          <th>nroUsuario</th>
           <th>Nombre</th>
-          <th>precios</th>
-          <th></th>
-          <th></th>
+          <th>Apellido</th>
+          <th>Dni</th>
+          <th>Correo</th>
+          <th>direccion</th>
+          <th>telefono</th>
+          <th>fechaIngreso</th>
           <th>Opciones</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+        <tr *ngFor="let usuario of listausuario">
+          <td>{{usuario.nroUsuario}}</td>
+          <td>{{usuario.nombre}}</td>
+          <td>{{usuario.apellido}}</td>
+          <td>{{usuario.dni}}</td>
+          <td>{{usuario.correo}}</td>
+          <td>{{usuario.direccion}}</td>
+          <td>{{usuario.telefono}}</td>
+          <td>{{usuario.fechaIngreso}}</td>
           <td>
             <button type="button" class="btn btn-primary"><ion-icon name="pencil-outline"></ion-icon>Editar</button>
             <button type="button" class="btn btn-danger" style="margin-left: 10px;"><ion-icon name="trash-outline"></ion-icon>Eliminar</button>

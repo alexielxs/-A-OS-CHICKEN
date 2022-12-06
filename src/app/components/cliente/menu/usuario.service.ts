@@ -16,4 +16,9 @@ export class UsuarioService
   {
     return this.http.get<Usuario>(this.urlEntPoint + 'usuario/listar/idLogin/' + id)
   }
+
+  traerTodo() : Observable<any>
+  {
+    return this.http.get<any>(this.urlEntPoint + 'usuario/listar')
+  }
 }
