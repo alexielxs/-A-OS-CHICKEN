@@ -19,6 +19,8 @@ import { FormsModule } from '@angular/forms';
 import { PlatosComponent } from './pages/admin/platos/platos.component';
 import { UsuariosComponent } from './pages/admin/usuarios/usuarios.component';
 import { OrdenesComponent } from './pages/admin/ordenes/ordenes.component';
+import { GraficoComponent } from './pages/admin/grafico/grafico.component';
+import { ChartjsModule } from '@coreui/angular-chartjs';
 
 
 @NgModule({
@@ -37,6 +39,7 @@ import { OrdenesComponent } from './pages/admin/ordenes/ordenes.component';
     PlatosComponent,
     UsuariosComponent,
     OrdenesComponent,
+    GraficoComponent,
     
   ],
   imports: [
@@ -44,6 +47,7 @@ import { OrdenesComponent } from './pages/admin/ordenes/ordenes.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ChartjsModule,
     IonicModule.forRoot()
   ],
   providers: [],
